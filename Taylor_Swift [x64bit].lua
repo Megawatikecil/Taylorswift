@@ -100,7 +100,7 @@ XGCK=1
 gg.setVisible(false)
 
 
-local ozorayuu=gg.alert("════════════════════════════════════\nMERGE COOKING LATEST VERSION BY RIFF KIMOCHII [x64bit]\n\nSCRIPT NOT TESTED ON SOME OTHER VIRTUALS/DEVICE\n\nSORRY IF THE SCRIPT DOESN'T WORK\n\nSCRIPT AUTHOR : RIFF KIMOCHII\n════════════════════════════════════","[ENTER MENU]","","[COPY LINK YT]")
+local ozorayuu=gg.alert("════════════════════════════════════\nTAYLOR SWEET LATEST VERSION BY RIFF KIMOCHII [x64bit]\n\nSCRIPT NOT TESTED ON SOME OTHER VIRTUALS/DEVICE\n\nSORRY IF THE SCRIPT DOESN'T WORK\n\nSCRIPT AUTHOR : RIFF KIMOCHII\n════════════════════════════════════","[ENTER MENU]","","[COPY LINK YT]")
   
     if ozorayuu==3 then 
         gg.copyText("https://youtube.com/@riffkimochii8742?si=i44RoyawZOa6Vj03",true) 
