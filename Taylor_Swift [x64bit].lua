@@ -1,4 +1,25 @@
-
+local Date = gg.makeRequest("http://www.whatismyip.org/")
+if (Date == "The user did not allow access to the Internet.") then
+    return
+elseif (Date == 'java.net.UnknownHostException: Unable to resolve host \"www.whatismyip.org\": No address associated with hostname') then
+    gg.alert("Please connect to the network")
+    return
+else
+    Date = Date['headers']['Date'][1]
+    local monthMap = {
+        Jan="01", Feb="02", Mar="03", Apr="04", May="05", Jun="06",
+        Jul="07", Aug="08", Sep="09", Oct="10", Nov="11", Dec="12"
+    }
+    local serverDate = tonumber(
+        string.sub(Date, 13, 16) ..
+        monthMap[string.sub(Date, 9, 11)] ..
+        string.sub(Date, 6, 7)
+    )
+    if serverDate >= tonumber("20260815") then
+        gg.alert("Script Has Expired !")
+        return
+    end
+end
 
 
 if gg.isPackageInstalled("sstool.only.com.sstool") then
@@ -87,7 +108,7 @@ local ozorayuu=gg.alert("══════════════════�
         gg.alert("Link Copied")
         end
 if ozorayuu==3 then
-    local ozorayuu=gg.alert("MERGE COOKING LATEST VERSION BY OZORAYUU [x64bit]\n\nSCRIPT AUTHOR : RIFF KIMOCHII","[ENTER MENU]","","[COPY LINK YT]")
+    local ozorayuu=gg.alert("TAYLOR SWEET LATEST VERSION BY OZORAYUU [x64bit]\n\nSCRIPT AUTHOR : RIFF KIMOCHII","[ENTER MENU]","","[COPY LINK YT]")
      end 
 ck=off gm=off ex=off
 st=off bo=off
@@ -103,7 +124,7 @@ local t = gg.multiChoice({
 'INFO[NOT RECOMMENDED]',
                               ------ MORE OPTIONS CAN BE ADDED LIKE THIS ------
 'EXIT'},nil,  (os.date([[╭ ─┉──┉──┉──┉───┉──¡! • !¡──┉───┉──┉──┉──┉─ ╮
-   MERGE COOKING
+   TAYLOR SWEET
    ══════════════════════════════════════
    Script Author : Riff kimochii
    ─┉─Cheating Is An Art In The Game─┉─
